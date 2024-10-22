@@ -1,0 +1,25 @@
+strings:
+  inputs: UI/Resources/en.lproj
+  outputs:
+    - templateName: structured-swift5
+      params:
+        publicAccess: true
+      output: UI/Generated/Strings.swift
+    - templateName: structured-swift5
+      params:
+        publicAccess: true
+      output: App/Generated/Strings.swift
+xcassets:
+  inputs: UI/Resources/Assets.xcassets
+  outputs:
+    templateName: swift5
+    params:
+      publicAccess: true
+    output: UI/Generated/Assets.swift
+plist:
+  inputs: App/Resources/Info.plist
+  outputs:
+    templateName: runtime-swift5
+    params:
+      publicAccess: true
+    output: App/Generated/Plist.swift  
